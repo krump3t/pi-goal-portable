@@ -1,0 +1,13 @@
+{
+  "animation": true,
+  "maxTurns": 100,
+  "maxRoleCalls": 60,
+  "maxHeals": 3,
+  "gateTimeoutSeconds": 120,
+  "roleTimeoutSeconds": 120,
+  "maxRoleTokens": 4096,
+  "maxReadCalls": 8,
+  "autoContinue": true,
+  "trustedGates": false,
+  "roles": {}
+}

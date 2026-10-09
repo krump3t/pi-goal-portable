@@ -1,0 +1,43 @@
+{
+  "name": "pi-goal-portable",
+  "version": "0.1.0",
+  "description": "Cloud-native host-verified /goal workflow with an animated Pi TUI party",
+  "type": "module",
+  "license": "UNLICENSED",
+  "keywords": [
+    "pi-package"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./02_app/extension.ts"
+    ],
+    "skills": [
+      "./02_app/skills"
+    ]
+  },
+  "files": [
+    "README.md",
+    "AGENTS.md",
+    "00_system",
+    "01_raw",
+    "02_app",
+    "03_ops",
+    "99_archive"
+  ],
+  "scripts": {
+    "test": "node --test 03_ops/*.test.mjs",
+    "check": "node 03_ops/audit.mjs",
+    "verify": "npm run check && npm test",
+    "pack": "node 03_ops/package.mjs",
+    "prepack": "npm run verify"
+  }
+}

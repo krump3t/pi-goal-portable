@@ -1,0 +1,40 @@
+{
+  "rootFiles": [
+    "README.md",
+    "AGENTS.md",
+    "package.json",
+    ".gitignore"
+  ],
+  "layers": [
+    "00_system",
+    "01_raw",
+    "02_app",
+    "03_ops",
+    "99_archive"
+  ],
+  "runtimeImports": {
+    "extension.ts": [
+      "./hud.mjs",
+      "./runner.mjs"
+    ],
+    "runner.mjs": [
+      "./config.mjs",
+      "./core.mjs",
+      "./roles.mjs"
+    ],
+    "core.mjs": [],
+    "config.mjs": [],
+    "roles.mjs": [
+      "./core.mjs"
+    ],
+    "hud.mjs": [
+      "./core.mjs"
+    ]
+  },
+  "runtimePeers": [
+    "@earendil-works/pi-coding-agent",
+    "@earendil-works/pi-ai",
+    "@earendil-works/pi-tui",
+    "typebox"
+  ]
+}

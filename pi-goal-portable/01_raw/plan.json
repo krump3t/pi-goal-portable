@@ -1,0 +1,30 @@
+{
+  "acceptance": [
+    "A sum module exports a tested sum function."
+  ],
+  "nodes": [
+    {
+      "id": "implement",
+      "task": "Implement sum.mjs",
+      "doneWhen": "sum adds two numbers",
+      "deps": [],
+      "serves": [
+        1
+      ],
+      "gate": "node --test sum.test.mjs"
+    },
+    {
+      "id": "document",
+      "task": "Document the sum API",
+      "doneWhen": "README describes sum",
+      "deps": [
+        "implement"
+      ],
+      "serves": [
+        1
+      ],
+      "gate": "node --test docs.test.mjs"
+    }
+  ],
+  "proof": "node --test"
+}
