@@ -47,7 +47,8 @@ GPU flags, folders named after this machine, MCP servers, or extra daemons.
 
 ## Animation compatibility
 
-The portable skin is **original compact pixel art**, with five roles, conveyor,
+The portable skin uses **AI-authored geometric pixel sprites defined in code**,
+not image-model output or modified third-party sprites. It has five roles, conveyor,
 role highlights, gate verdicts and recovery. It is not a byte-identical export
 of the local full-size sprite skin: that skin includes a **non-redistributable
 Cute Fantasy asset**, deliberately excluded along with all third-party packs.

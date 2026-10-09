@@ -25,6 +25,7 @@ No secrets, endpoint configuration or personal runtime state belongs here.
 | [goal.config.example.json](goal.config.example.json) | Safe project configuration template |
 | [NOTICE.md](NOTICE.md) | Provenance, excluded artwork and licensing |
 | [VALIDATION.md](VALIDATION.md) | Executed evidence and explicit unverified boundaries |
+| [diagrams/](diagrams/README.md) | Portable workflow image and editable Mermaid source |
 
 Next: [runtime](../02_app/README.md) for implementation,
 [operations](../03_ops/README.md) for verification.

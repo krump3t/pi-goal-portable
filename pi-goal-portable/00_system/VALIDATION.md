@@ -7,7 +7,7 @@ production service operations are included in offline verification.
 
 Executed 2026-10-09 with Node 22.22.1 and Pi 1.1.0; CUDA hidden.
 
-- `npm run verify`: exit **0**; audit **34 files**, **44 tests passed**, 0 failed.
+- `npm run verify`: exit **0**; audit **37 files**, **44 tests passed**, 0 failed.
 - Tests cover DAG/schema, state/fingerprint, consent, host gate evidence,
   red recovery, amendment consent, final regression reruns, session restore,
   provider-neutral dispatch, malformed/error output, cancellation/concurrency,
@@ -19,13 +19,20 @@ Executed 2026-10-09 with Node 22.22.1 and Pi 1.1.0; CUDA hidden.
   No credentials loaded; no network or paid API calls.
 - Original local sprite packs were excluded; source audit found no host-specific
   absolute paths or local model launchers/endpoints.
-- ACLSD re-audit: all seven directory roadsigns have substantive four-question
+- ACLSD re-audit: all eight directory roadsigns have substantive four-question
   sections, explicit component links, parent exits and dated stamps. Root hub
-  is 76 lines, AGENTS.md 61; directory READMEs are 24..40 lines.
+  is 77 lines, AGENTS.md 61; directory READMEs are 24..40 lines.
 - Ten structure tests prove acceptance plus rejection of root sprawl, broken
   links, unmapped components, missing parent exits, empty sections, line-cap
   violations, forbidden/computed imports and missing agent-layer navigation.
 - Both ZIP packaging and npm prepack require offline verification.
+- Portable workflow diagram: valid accessible SVG XML; no scripts, event handlers
+  or external assets. Chromium-rendered text bounds and forward-rail clearance
+  checks returned zero layout errors. A rendered preview was visually inspected.
+  This is a readable overview, not a full state-machine or collision proof.
+- Repository-root landing page is 97 lines; its relative links resolve against
+  the existing nested-package layout. This documentation update adds no runtime
+  code. The Mermaid source is editable; no Mermaid rendering proof is claimed.
 - Scaffolding doctrine was consulted through Obsidian MCP (no disk fallback).
   The oversized source guide exceeded read budgets; bounded indexed retrieval
   supplied its lead text. Compliance evidence is the executed package gates.

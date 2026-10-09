@@ -1,0 +1,29 @@
+flowchart TB
+  O["/goal objective<br/>Soldier inspects project and proposes approach"]
+  P["Navigator builds contract<br/>Host validates DAG; Wizard audits plan"]
+  A["Owner reviews commands<br/>/goal approve — default consent path"]
+  B["Host runs gate/proof baselines<br/>Red or green are observations"]
+  E["Soldier executes NEXT ACTION<br/>Host gate; Wizard node review if gate passes"]
+  F["Host reruns every gate and locked proof<br/>Fresh Wizard final review if all pass"]
+  D["VERIFIED complete<br/>Scholar lesson is advisory after acceptance"]
+  R["Priest diagnoses a red outcome<br/>Bounded recovery; no self-certification"]
+  H["Planning/task advice: retry relevant action<br/>Unpassed-gate amendment: Wizard audit + renewed approval/baselines<br/>Owner-only need: pause for owner"]
+  N["Cloud roles use Pi provider registry<br/>Errors, cancellation or exhausted limits pause<br/>Trusted-project CI consent is an explicit opt-in"]
+  O --> P --> A --> B --> E
+  E -->|"Accepted node; more ready nodes"| E
+  E -->|"All nodes accepted"| F
+  F -->|"Every rerun green; final review accepts"| D
+  P -->|"Plan rejected"| R
+  E -->|"Gate/review red or worker blocked"| R
+  F -->|"Rerun/final review red"| R
+  R --> H
+  classDef role fill:#eef2ff,stroke:#4338ca,color:#172554
+  classDef host fill:#eff6ff,stroke:#1d4ed8,color:#172554
+  classDef consent fill:#fff7ed,stroke:#9a3412,color:#431407
+  classDef recover fill:#fff1f2,stroke:#9f1239,color:#4c0519
+  classDef done fill:#ecfdf5,stroke:#047857,color:#064e3b
+  class O,P role
+  class B,E,F,N host
+  class A consent
+  class R,H recover
+  class D done

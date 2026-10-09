@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1030" viewBox="0 0 1100 1030" role="img" aria-labelledby="title desc">
+<title id="title">Pi Goal Portable — host-verified goal workflow</title>
+<desc id="desc">Soldier discovery, Navigator planning and Wizard plan audit, owner consent, observed gate baselines, a per-node Soldier and host verification loop, then all-gate and locked-proof reruns and a fresh Wizard final review. Acceptance is recorded before advisory Scholar lessons. Plan, execution or final red outcomes go to bounded Priest diagnosis. Recovery advises retry, audits an eligible gate amendment with renewed consent, or pauses for an owner-only need. Cloud roles use Pi's provider registry. Provider errors, cancellation and exhausted limits pause.</desc>
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#334155"/></marker>
+ <marker id="red" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#9f1239"/></marker>
+ <marker id="green" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0L10 5L0 10Z" fill="#047857"/></marker>
+ <style>
+ text{font-family:Arial,Helvetica,sans-serif;fill:#0f172a}
+ .heading{font-size:29px;font-weight:700}
+ .label{font-size:19px;font-weight:700}
+ .body{font-size:16px}
+ .small{font-size:14px;fill:#334155}
+ .edge{fill:none;stroke:#334155;stroke-width:2.5;marker-end:url(#arrow)}
+ .fail{fill:none;stroke:#9f1239;stroke-width:2.5}
+ .ok{fill:none;stroke:#047857;stroke-width:2.5;marker-end:url(#green)}
+ .model{fill:#eef2ff;stroke:#4338ca;stroke-width:1.5}
+ .host{fill:#eff6ff;stroke:#1d4ed8;stroke-width:1.5}
+ .consent{fill:#fff7ed;stroke:#9a3412;stroke-width:1.5}
+ .recovery{fill:#fff1f2;stroke:#9f1239;stroke-width:1.5}
+ .done{fill:#ecfdf5;stroke:#047857;stroke-width:1.5}
+ </style>
+</defs>
+<rect width="1100" height="1030" rx="16" fill="#ffffff"/>
+<text x="64" y="48" class="heading">Pi Goal Portable</text>
+<text x="64" y="77" class="body">Cloud model judgments + host execution evidence. Default owner-consent path.</text>
+<!-- Forward path: model roles, consent, host baselines, per-node work, final evidence. -->
+<path class="edge" d="M319 174V206"/>
+<path class="edge" d="M319 278V310"/>
+<path class="edge" d="M319 378V410"/>
+<path class="edge" d="M319 478V510"/>
+<path class="ok" d="M319 602V700"/>
+<path class="ok" d="M319 796V886"/>
+<!-- Accepted-node loop has a dedicated outer rail. -->
+<path class="edge" d="M90 602V638H24V530H64"/>
+<!-- Red outcomes merge on a separate rail; one arrow enters Priest. -->
+<path class="fail" d="M574 242H646V366"/>
+<path class="fail" d="M574 555H646V366"/>
+<path class="fail" d="M574 748H646V555"/>
+<path class="fail" d="M646 366H714" marker-end="url(#red)"/>
+<path class="edge" d="M879 402V436"/>
+<g>
+ <rect class="model" x="64" y="106" width="510" height="68" rx="10"/>
+ <text x="84" y="134" class="label">1. Objective + Soldier discovery</text>
+ <text x="84" y="158" class="body">/goal starts project inspection and an approach</text>
+ <rect class="model" x="64" y="206" width="510" height="72" rx="10"/>
+ <text x="84" y="234" class="label">2. Navigator contract + Wizard plan audit</text>
+ <text x="84" y="258" class="body">Host validates the bounded dependency DAG</text>
+ <rect class="consent" x="64" y="310" width="510" height="68" rx="10"/>
+ <text x="84" y="338" class="label">3. Owner reviews and approves commands</text>
+ <text x="84" y="362" class="body">/goal approve grants consent for exact commands</text>
+ <rect class="host" x="64" y="410" width="510" height="68" rx="10"/>
+ <text x="84" y="438" class="label">4. Host records every gate/proof baseline</text>
+ <text x="84" y="462" class="body">Red and green baselines are observations</text>
+ <rect class="host" x="64" y="510" width="510" height="92" rx="10"/>
+ <text x="84" y="538" class="label">5. Execute and verify one ready node</text>
+ <text x="84" y="563" class="body">Soldier: NEXT ACTION → host runs locked gate</text>
+ <text x="84" y="587" class="body">Gate passes → Wizard reviews the node</text>
+ <text x="104" y="635" class="small">More accepted nodes: repeat</text>
+ <text x="336" y="675" class="small">All nodes accepted</text>
+ <rect class="host" x="64" y="700" width="510" height="96" rx="10"/>
+ <text x="84" y="728" class="label">6. Final reruns + fresh Wizard audit</text>
+ <text x="84" y="753" class="body">Host reruns every gate and the locked proof</text>
+ <text x="84" y="778" class="body">All pass → Wizard audits the whole objective</text>
+ <text x="336" y="837" class="small">All reruns pass</text>
+ <text x="336" y="859" class="small">Final audit accepts</text>
+ <rect class="done" x="64" y="886" width="510" height="68" rx="10"/>
+ <text x="84" y="914" class="label">7. VERIFIED complete</text>
+ <text x="84" y="938" class="body">Scholar lesson is advisory, after acceptance</text>
+</g>
+<text x="586" y="230" class="small">Reject</text>
+<text x="591" y="544" class="small">Red</text>
+<text x="591" y="737" class="small">Red</text>
+<g>
+ <rect class="recovery" x="714" y="330" width="330" height="72" rx="10"/>
+ <text x="734" y="358" class="label">Priest diagnoses the red</text>
+ <text x="734" y="383" class="body">Bounded recovery, not re-judgment</text>
+ <rect class="recovery" x="714" y="436" width="330" height="226" rx="10"/>
+ <text x="734" y="465" class="label">Recovery outcomes</text>
+ <text x="734" y="494" class="body">Planning/task advice:</text>
+ <text x="734" y="517" class="body">retry the relevant action</text>
+ <text x="734" y="551" class="body">Eligible unpassed-gate amendment:</text>
+ <text x="734" y="574" class="body">Wizard audit + renewed approval</text>
+ <text x="734" y="597" class="body">and host baselines before retry</text>
+ <text x="734" y="630" class="body">Owner-only need: pause for owner</text>
+ <rect class="host" x="714" y="716" width="330" height="164" rx="10"/>
+ <text x="734" y="745" class="label">Portable runtime</text>
+ <text x="734" y="774" class="body">Cloud roles use Pi's registry</text>
+ <text x="734" y="800" class="body">No local inference servers</text>
+ <text x="734" y="831" class="body">Errors, cancellation or limits:</text>
+ <text x="734" y="855" class="body">pause; explicit resume required</text>
+</g>
+<text x="64" y="992" class="small">Overview, not an execution guarantee. Trusted-project CI consent is an explicit opt-in; approval is not sandboxing.</text>
+</svg>

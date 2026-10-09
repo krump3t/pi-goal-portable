@@ -2,12 +2,17 @@
 
 ## Flow
 
+![Portable goal workflow](diagrams/goal-workflow.svg)
+
+[Diagram source and scope](diagrams/README.md). This overview shows default
+owner consent; trusted-project CI approval is an explicit opt-in.
+
 Owner objective -> Soldier discovery/approach -> Navigator constructs a bounded
 dependency DAG and acceptance criteria -> Wizard audits -> owner approves
 commands -> host dry-runs baselines -> Soldier executes one ready node -> host
 runs its gate -> Wizard audits node -> Priest diagnoses every red -> repeat.
 All nodes green -> host re-runs all gates + locked proof -> fresh Wizard final
-audit -> Scholar lesson -> done.
+audit -> durable done acceptance -> advisory Scholar lesson.
 
 The host validates DAG shape, dependencies and limits. Reviews run in fresh
 cloud contexts with read-only project file access and bounded tool budgets.
@@ -26,7 +31,7 @@ mechanically provable: owner review is the last authority for gate semantics.
   your team's permission extensions for that separate concern.
 - No automatic deferred owner-node execution. Owner-only blockers pause safely.
 - State is portable via Pi sessions, not an external project state database.
-- Original compact HUD, not restricted third-party sprite assets.
+- AI-authored compact pixel sprites defined in code, not third-party sprite assets.
 
 ## State and lifecycle
 

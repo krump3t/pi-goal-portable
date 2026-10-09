@@ -8,7 +8,10 @@ No local runtime source tree, provider config, memories, sessions, policies,
 third-party pixel tables, image packs, or credentials are copied.
 The local HUD's Cute Fantasy blocker was documented as non-commercial,
 no redistribution. It is **not included**. Tiny Swords and Tidebound tables
-are also excluded; the shipped skin is newly drawn original geometric art.
+are also excluded. The shipped sprites are AI-authored geometric pixel patterns
+defined directly in code. No image-generation model was used and no third-party
+sprites were copied or modified. The workflow diagrams are also AI-authored,
+new vector graphics; the local diagram decks were not copied.
 
 The runtime and original portable skin are supplied for the requesting owner's
 team asset. The manifest is UNLICENSED (no general public license granted).
